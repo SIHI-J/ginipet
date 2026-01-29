@@ -1,0 +1,44 @@
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 공통으로 사용할 변수 선언*/
+$main-color-black: #000000;
+$main-color-gray: #494949;
+$main-color-dg: #717171;
+$main-color-red: #FA131C;
+$main-text-color: #333333;
+$main-text-color-g: #333333;
+$main-text-color-w: #FFFFFF;
+$bg-color-w: #f9f9f9;
+$bg-color-g: #A3A1A1;
+$bg-color-lg: #DDDDDD;
+$bg-color-bk: #3A3A3A;
+$base-font-size: 12px;
+$base-font-family: 'Noto Sans KR', sans-serif;
+
+/* 공통 스타일 설정 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: $main-color-gray;
+  background-color: $bg-color-w;
+}
+
+a {
+  font-family: $base-font-family;
+  color: $main-color-gray;
+  text-decoration: none;
+}
+
+/* 버튼 서식*/
+.btn,
+.close_btn,
+.toggle_btn,
+.cart_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}

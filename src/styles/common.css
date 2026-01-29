@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* 웹폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+/* 공통으로 사용할 변수 선언*/
+/* 공통 스타일 설정 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  color: #494949;
+  background-color: #f9f9f9;
+}
+
+a {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #494949;
+  text-decoration: none;
+}
+
+/* 버튼 서식*/
+.btn,
+.close_btn,
+.toggle_btn,
+.cart_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}/*# sourceMappingURL=common.css.map */

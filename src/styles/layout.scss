@@ -1,0 +1,233 @@
+@use './common' as *;
+
+/* header 서식*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  background-color: $bg-color-bk;
+
+  h1 {
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      height: 50px;
+    }
+  }
+
+  .toggle_btn {
+    top: 9px;
+    left: 18px;
+
+    img {
+      width: 40px;
+    }
+  }
+
+  .cart_btn {
+    top: 5px;
+    right: 20px;
+  }
+
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  top: 0;
+  left: -100%;
+  z-index: 1000;
+  transition: 0.3s;
+
+  .close_btn {
+    top: 20px;
+    left: 20px;
+  }
+
+  .gnb {
+    width: 90%;
+    margin: 80px auto 0 auto;
+
+    a {
+      display: block;
+      font-size: $base-font-size * 2;
+      color: $main-text-color-w;
+      padding: 15px 0;
+      border-top: 1px solid $main-color-dg;
+    }
+  }
+
+  .form_nav {
+    width: 90%;
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: 49%;
+      line-height: 40px;
+      display: inline-block;
+      background-color: $bg-color-bk;
+      margin: 1px 0.20%;
+      text-align: center;
+
+      button {
+        width: 100%;
+        height: 100%;
+      }
+
+      a,
+      button {
+
+        background: none;
+        border: none;
+        display: block;
+        color: $main-text-color-w;
+        font-size: 0.92rem;
+      }
+    }
+
+  }
+}
+
+/* footer 서식*/
+footer {
+  position: relative;
+  width: 100%;
+  background-color: $main-color-gray;
+  color: $main-text-color-w;
+  font-size: 0.85rem;
+  padding-bottom: 40px;
+
+  .footer_top {
+    width: 100%;
+    top: 0px;
+    background-color: $main-color-dg;
+
+    a {
+      display: block;
+      font-weight: bold;
+      padding: 10px 0 10PX 20px;
+      color: $main-text-color-w;
+      font-size: 14px;
+    }
+  }
+
+  .footer_nav {
+    width: 90%;
+    margin: 10px auto 0 auto;
+    display: flex;
+    border-bottom: 1px solid $main-text-color;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    ul {
+      display: flex;
+      gap: 10px;
+
+      li {
+        line-height: 26px;
+        display: inline-block;
+
+        a {
+          display: block;
+          font-size: 12px;
+          padding: 0px 4px;
+          color: $main-text-color-w;
+        }
+
+        &:first-of-type a {
+          color: $main-color-red;
+          background-color: $main-text-color-w;
+          font-weight: bold;
+        }
+      }
+    }
+
+    a {
+      img {
+        height: 30px;
+        border-radius: 10px;
+      }
+    }
+
+
+  }
+
+  .tel_info {
+    width: 90%;
+    margin: 10px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    color: $bg-color-g;
+    font-size: 12px;
+    line-height: 20px;
+    border-bottom: 1px solid $main-text-color;
+
+    a {
+      color: $main-text-color-w;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 4px 0;
+
+    }
+  }
+
+  .business_info {
+    width: 90%;
+    margin: 0px auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $main-text-color;
+  }
+
+  .business_btn {
+    background: none;
+    display: block;
+    border: none;
+    cursor: pointer;
+    color: $main-text-color-w;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+/*top버튼*/
+.top_btn {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+  /* 처음엔 숨김 */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+
+  &.show {
+    display: flex;
+    opacity: 1;
+  }
+
+  &:hover {
+    background: $main-color-red;
+  }
+}

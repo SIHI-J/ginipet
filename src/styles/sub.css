@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* 웹폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+/* 공통으로 사용할 변수 선언*/
+/* 공통 스타일 설정 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  color: #494949;
+  background-color: #f9f9f9;
+}
+
+a {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #494949;
+  text-decoration: none;
+}
+
+/* 버튼 서식*/
+.btn,
+.close_btn,
+.toggle_btn,
+.cart_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+.sub {
+  background-color: #f9f9f9;
+}
+.sub h2 {
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: #DDDDDD;
+}
+.sub .join_form,
+.sub .login_form {
+  width: 80%;
+}
+.sub .join_form div,
+.sub .login_form div {
+  margin-bottom: 20px;
+}
+.sub .join_form div label,
+.sub .login_form div label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.sub .join_form div input,
+.sub .login_form div input {
+  width: 100%;
+  line-height: 30px;
+  text-indent: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #717171;
+  outline: none;
+}
+.sub .join_form div input:focus,
+.sub .login_form div input:focus {
+  border: 1px solid #f00 !important;
+  box-shadow: 0 0 3px rgba(255, 0, 0, 0.3);
+}
+.sub .join_form .id_box,
+.sub .login_form .id_box {
+  margin: 0 auto;
+}
+.sub .join_form .id_box p,
+.sub .login_form .id_box p {
+  display: flex;
+  gap: 10px;
+}
+.sub .join_form .id_box p input,
+.sub .login_form .id_box p input {
+  width: 70%;
+}
+.sub .join_form .id_box p button,
+.sub .login_form .id_box p button {
+  width: 30%;
+  border: none;
+  background: #494949;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+.sub .join_form p,
+.sub .login_form p {
+  margin: 10px auto;
+  color: #494949;
+}
+.sub .join_form p input[type=checkbox],
+.sub .login_form p input[type=checkbox] {
+  accent-color: #FA131C;
+}
+.sub .join_form .link,
+.sub .login_form .link {
+  width: 70%;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.sub .join_form .link span,
+.sub .login_form .link span {
+  color: #DDDDDD;
+}
+.sub .join_form .submit,
+.sub .login_form .submit {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background: #FA131C;
+  color: #FFFFFF;
+}
+.sub .join_form .submit:hover,
+.sub .login_form .submit:hover {
+  opacity: 0.7;
+}
+.sub .join_form {
+  margin: 40px auto;
+}
+.sub .login_form {
+  margin: 40px auto 20px auto;
+}
+.sub .askjoin_box {
+  width: 80%;
+  margin: 0px auto;
+  border-top: 1px solid #DDDDDD;
+  padding: 20px;
+  text-align: center;
+}
+.sub .askjoin_box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+.sub .askjoin_box p {
+  color: #717171;
+  line-height: 20px;
+}
+.sub .askjoin_box a {
+  margin: 20px auto;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #DDDDDD;
+  display: block;
+  line-height: 40px;
+}/*# sourceMappingURL=sub.css.map */

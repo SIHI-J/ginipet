@@ -1,0 +1,139 @@
+@use './common.scss' as *;
+
+.sub {
+  background-color: $bg-color-w;
+
+  h2 {
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: $bg-color-lg;
+  }
+
+  .join_form,
+  .login_form {
+    width: 80%;
+
+    div {
+      margin-bottom: 20px;
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        line-height: 30px;
+        text-indent: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        color: $main-color-dg;
+        outline: none;
+
+        &:focus {
+          border: 1px solid #f00 !important;
+          box-shadow: 0 0 3px rgba(255, 0, 0, 0.3);
+        }
+      }
+    }
+
+    .id_box {
+      margin: 0 auto;
+
+      p {
+        display: flex;
+        gap: 10px;
+
+        input {
+          width: 70%;
+        }
+
+        button {
+          width: 30%;
+          border: none;
+          background: $main-color-gray;
+          color: $main-text-color-w;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    p {
+      margin: 10px auto;
+      color: $main-color-gray;
+
+      input[type="checkbox"] {
+        accent-color: $main-color-red;
+      }
+    }
+
+    .link {
+      width: 70%;
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        color: $bg-color-lg;
+      }
+    }
+
+
+
+    .submit {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      background: $main-color-red;
+      color: $main-text-color-w;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .join_form {
+    margin: 40px auto
+  }
+
+  .login_form {
+    margin: 40px auto 20px auto;
+  }
+
+  .askjoin_box {
+    width: 80%;
+    margin: 0px auto;
+    border-top: 1px solid $bg-color-lg;
+    padding: 20px;
+    text-align: center;
+
+    h3 {
+      font-size: 16px;
+      font-weight: bold;
+      color: $main-text-color;
+    }
+
+    p {
+      color: $main-color-dg;
+      line-height: 20px;
+    }
+
+    a {
+      margin: 20px auto;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid $bg-color-lg;
+      display: block;
+      line-height: 40px;
+    }
+  }
+}
