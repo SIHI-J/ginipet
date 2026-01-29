@@ -3,6 +3,7 @@ import '../styles/sub.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { jwtDecode } from 'jwt-decode';
+import BASE_URL from '../config';
 function Login({ setUser }) {
   const [loginForm, setLoginForm] = useState({ username: '', password: '' });
   const [saveId, setSaveId] = useState(false);
@@ -24,7 +25,7 @@ function Login({ setUser }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:9070/login', loginForm, {
+      const res = await axios.post(`${BASE_URL}/ginipet_login`, loginForm, {
         headers: { 'Content-Type': 'application/json' },
       });
       const token = res.data.token;

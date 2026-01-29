@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/sub.css'
+import BASE_URL from '../config';
 function Join(props) {
   // 1. 폼 데이터 상태 관리
   const [form, setForm] = useState({
@@ -18,7 +19,7 @@ function Join(props) {
   const CheckUsername = () => {
     if (!form.username) return alert("아이디를 입력해주세요.");
 
-    axios.get(`http://localhost:9070/ginipet_users?username=${form.username}`)
+    axios.get(`${BASE_URL}/ginipet_users?username=${form.username}`)
       .then(res => {
         if (res.data.length > 0) {
           alert("이미 사용 중인 아이디입니다.");
@@ -65,7 +66,7 @@ function Join(props) {
       return;
     }
     console.log("회원가입 데이터:", form);
-    axios.post('http://localhost:9070/ginipet_users', {
+    axios.post(`${BASE_URL}/ginipet_users`, {
       username: form.username,
       password: form.password,
       email: form.email,
