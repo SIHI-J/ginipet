@@ -29,8 +29,11 @@ function Join(props) {
           setIsIdChecked(true); // 성공 시 true
         }
       })
-      .catch(() => alert("서버 오류가 발생했습니다."));
-  };
+      .catch(err => {
+        console.log(err.response?.status, err.response?.data);
+        alert(err.response?.data?.sqlMessage || err.response?.data?.error || "회원가입 실패");
+      });
+  }
   const PhoneNumber = (value) => {
     // 숫자가 아닌 문자 제거
     const numbers = value.replace(/[^0-9]/g, '');
